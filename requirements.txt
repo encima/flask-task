@@ -1,0 +1,16 @@
+backports-abc==0.4
+backports.ssl-match-hostname==3.5.0.1
+certifi==2016.2.28
+Flask==0.10.1
+Flask-Admin==1.4.0
+Flask-Login==0.3.2
+Flask-SQLAlchemy==2.1
+itsdangerous==0.24
+Jinja2==2.8
+MarkupSafe==0.23
+passlib==1.6.5
+singledispatch==3.4.0.3
+six==1.10.0
+SQLAlchemy==1.0.12
+tornado==4.3
+Werkzeug==0.11.4
