@@ -1,4 +1,5 @@
 import os
+from app.tw import TW_Loader
 from app import app, db, login_manager, models
 from app.models import User
 from flask import Flask, request, redirect, url_for, render_template, g, send_from_directory, jsonify
@@ -7,8 +8,12 @@ import flask.ext.login as flask_login
 from werkzeug import secure_filename
 from datetime import datetime
 from passlib.hash import sha256_crypt
+from flask_table import Table, Col
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
+
+twl = TW_Loader(app.config['TASKRC'])
+tasks = twl.get_tasks()
 
 @login_manager.user_loader
 def user_loader(id):
@@ -74,8 +79,25 @@ def logout():
     flask_login.logout_user()
     return redirect(url_for('login'))
 
+@app.route('/add', methods=["POST"])
+# @flask_login.login_required
+def add_task():
+    twl.add_task(request.form['task'])
+    return redirect(url_for('index'))
+
+@app.route('/do/<task_id>', methods=['POST'])
+def do_task(task_id):
+    twl.task_done(id=id)
+
+@app.route('/refresh')
+# @flask_login.login_required
+def refresh():
+    twl.refresh_tasks()
+    return redirect(url_for('index'))
+
+
 
 @app.route('/')
 # @flask_login.login_required
 def index(name=None):
-    return render_template('index.html', current_user=flask_login.current_user)
+    return render_template('index.html', current_user=flask_login.current_user, tasks = twl.get_tables())

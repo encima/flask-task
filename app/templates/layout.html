@@ -14,10 +14,11 @@
 
   </head>
   <body>
-        <div id="wrapper" class="content">
+        <div id="wrapper" class="content container">
                 <!-- Page Content -->
                 {% block body %}{% endblock %}
         </div>
+        <script src={{ url_for('static', filename='js/jquery.min.js') }}></script>
     <script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
     <script src={{ url_for('static', filename='js/scripts.js') }}></script>
   </body>
