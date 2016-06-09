@@ -2,7 +2,7 @@
 {% block body %}
     <div id="page-content-wrapper">
         <form class="add-task" method="POST" action="/add">
-            <input name="task" placeholder="Enter a task in the format: <task> | project=\"proj\" | priority=\"priority\""/>
+            <input name="task" placeholder="Enter a task in the format: task:<task> project:<proj> +tag +tag due:<due> urgency:<dd-mm-yyyy>"" | priority=\"priority\""/>
         </form>
         {% for project in tasks: %}
             <div class="col-md-6">

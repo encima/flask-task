@@ -57,6 +57,7 @@ def register():
     elif request.method == 'GET':
         return render_template('register.html')
 
+#TODO login and register required before accessing index
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -88,6 +89,8 @@ def add_task():
 @app.route('/do/<task_id>', methods=['POST'])
 def do_task(task_id):
     twl.task_done(id=id)
+    twl.refresh_tasks()
+    return redirect(url_for('index'))
 
 @app.route('/refresh')
 # @flask_login.login_required

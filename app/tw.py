@@ -4,8 +4,8 @@ from operator import itemgetter
 from flask_table import Table, Col
 import re
 
-# Declare your table
 class TaskTable(Table):
+	#match bootstrap classes
     classes = ["table-responsive", "table-condensed", "table-bordered"]
     id = Col('id')
     description = Col('Description')
@@ -13,11 +13,11 @@ class TaskTable(Table):
 
     def tr_format(self, item):
         if item['urgency'] >= 6:
-            return '<tr class="important">{}</tr>'
-		elif item['urgency'] 1 and item['urgency'] < 6:
-			return '<tr class="moderate">{}</tr>'
+            return '<tr data-id="{0}" class="{1}">'.format(item['id'], 'important') + "{}</tr>"
+        elif item['urgency'] >= 1 and item['urgency'] < 6:
+            return '<tr data-id="{0}" class="{1}">'.format(item['id'], 'moderate') + "{}</tr>"
         else:
-            return '<tr>{}</tr>'
+            return '<tr data-id="{0}" class="{1}">'.format(item['id'], 'normal') + "{}</tr>"
 
 class TW_Loader:
 
@@ -45,6 +45,7 @@ class TW_Loader:
 			else:
 				self.tasks[pr] = []
 				self.tasks[pr].append(task)
+		#create tables from sorted tasks
 		for project in self.tasks.keys():
 			table = TaskTable(self.tasks[project])
 			self.task_tables[project] = table
@@ -58,6 +59,8 @@ class TW_Loader:
 			return None
 
 	def add_task(self, text):
+		#positive lookbehind to match and extract terms
+		#task MUST come before project
 		task = re.search("(?<=task:)(?:(?!project:).)*", text)
 		project = re.search("(?<=project:).*?(?=\s)", text)
 		tags = re.findall("\+(\S+)", text)
@@ -74,7 +77,6 @@ class TW_Loader:
 		if due is not None:
 			due = due.group().strip()
 			#TODO convert to epoch
-		print(project)
 		self.w.task_add(task, project=project, tags=tags, priority=urgency)
 		self.refresh_tasks()
 		parsed_task['task'] = task
