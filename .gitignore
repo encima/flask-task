@@ -3,7 +3,8 @@
 
 tf/*
 
-config/*
+app/config/*
+*.db
 #####=== Python ===#####
 *.sw*
 uploads/
