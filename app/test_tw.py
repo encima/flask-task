@@ -13,7 +13,7 @@ class Test_TW(unittest.TestCase):
         print(parsed_task)
         self.assertEqual(parsed_task['task'], 'hello there')
         self.assertEqual(parsed_task['project'], 'test_project')
-        self.assertEqual(parsed_task['tags'], 'tag,tags')
+        self.assertEqual(parsed_task['tags'], ['tag', 'tags'])
 
 if __name__ == '__main__':
     unittest.main()

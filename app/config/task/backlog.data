@@ -68,3 +68,4 @@
 {"description":"test","entry":"20160609T142008Z","modified":"20160609T142008Z","status":"pending","uuid":"5e121ae4-2093-43a2-bdef-86b0853bf192"}
 {"description":"test","end":"20160609T142154Z","entry":"20160609T142008Z","modified":"20160609T142154Z","status":"completed","uuid":"5e121ae4-2093-43a2-bdef-86b0853bf192"}
 {"description":"test","end":"20160609T142209Z","entry":"20160609T142001Z","modified":"20160609T142209Z","status":"completed","uuid":"97107067-2ef8-47bd-8ee9-09b319b0ea59"}
+{"description":"upload flask-task to digital ocean","entry":"20160609T142314Z","modified":"20160609T142314Z","project":"side_projects","status":"pending","tags":["task"],"uuid":"d8464fb1-e98a-459a-aeca-e07823ae5692"}
