@@ -66,7 +66,6 @@ class TW_Loader:
 		tags = re.findall("\+(\S+)", text)
 		urgency = re.search("(?<=urgency:).*?(?=\s)", text)
 		due = re.search("(?<=due:).*?(?=\s)", text)
-		tags = ",".join(tags)
 		parsed_task = {}
 		if project is not None:
 			project = project.group().strip()
@@ -79,6 +78,7 @@ class TW_Loader:
 			#TODO convert to epoch
 		self.w.task_add(task, project=project, tags=tags, priority=urgency)
 		self.refresh_tasks()
+		print(self.tasks)
 		parsed_task['task'] = task
 		parsed_task['project'] = project
 		parsed_task['urgency'] = urgency

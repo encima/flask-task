@@ -86,19 +86,26 @@ def add_task():
     twl.add_task(request.form['task'])
     return redirect(url_for('index'))
 
-@app.route('/do/<task_id>', methods=['POST'])
-def do_task(task_id):
-    twl.task_done(id=id)
-    twl.refresh_tasks()
-    return redirect(url_for('index'))
+@app.route('/do', methods=['POST', 'PUT'])
+def do_task():
+    msg = "ok"
+    project = "unassigned"
+    print(request.form)
+    if 'id' in request.form:
+        task = twl.w.get_task(id=request.form['id'])
+        print(task)
+        project = task[1]['project']
+        twl.w.task_done(id=request.form['id'])
+        twl.refresh_tasks()
+        msg = twl.get_tables()
+        print(msg)
+    return jsonify({"error":False, "table":msg, "project":project})
 
 @app.route('/refresh')
 # @flask_login.login_required
 def refresh():
     twl.refresh_tasks()
     return redirect(url_for('index'))
-
-
 
 @app.route('/')
 # @flask_login.login_required
