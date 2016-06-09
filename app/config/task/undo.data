@@ -241,3 +241,41 @@ new [description:"test" end:"1465482129" entry:"1465482001" modified:"1465482129
 time 1465482194
 new [description:"upload flask-task to digital ocean" entry:"1465482194" modified:"1465482194" project:"side_projects" status:"pending" tags:"task" uuid:"d8464fb1-e98a-459a-aeca-e07823ae5692"]
 ---
+time 1465482441
+new [description:"complete vetting form" entry:"1465482441" modified:"1465482441" status:"pending" uuid:"533d1f32-7568-41c8-8e9f-3a98df31600e"]
+---
+time 1465482491
+new [description:"complete vetting form" entry:"1465482491" modified:"1465482491" status:"pending" uuid:"7a8cd94a-2f77-4f62-9c29-e71ddf31126a"]
+---
+time 1465482495
+old [description:"complete vetting form" entry:"1465482491" modified:"1465482491" status:"pending" uuid:"7a8cd94a-2f77-4f62-9c29-e71ddf31126a"]
+new [description:"complete vetting form" end:"1465482495" entry:"1465482491" modified:"1465482495" status:"completed" uuid:"7a8cd94a-2f77-4f62-9c29-e71ddf31126a"]
+---
+time 1465482496
+old [description:"complete vetting form" entry:"1465482441" modified:"1465482441" status:"pending" uuid:"533d1f32-7568-41c8-8e9f-3a98df31600e"]
+new [description:"complete vetting form" end:"1465482496" entry:"1465482441" modified:"1465482496" status:"completed" uuid:"533d1f32-7568-41c8-8e9f-3a98df31600e"]
+---
+time 1465482508
+new [description:"vetting form" entry:"1465482508" modified:"1465482508" project:"curop" status:"pending" uuid:"405ed116-499d-425b-858a-f0d379746dfa"]
+---
+time 1465502389
+new [description:"call john on facetime" entry:"1465502389" modified:"1465502389" project:"side_projects" status:"pending" uuid:"8c569a10-5a77-4aab-bab4-2332f950dc70"]
+---
+time 1465502404
+new [description:"call john on facetime" entry:"1465502404" modified:"1465502404" project:"side_projects" status:"pending" tags:"tag,fumbs" uuid:"2a2197fc-747a-48e2-9148-cfb0fd996ee5"]
+---
+time 1465502620
+new [description:"call john on facetime" entry:"1465502620" modified:"1465502620" project:"side_projects" status:"pending" tags:"tag" uuid:"964d80e2-268a-4daf-9c4e-86ff276b702a"]
+---
+time 1465503224
+new [description:"call john on facetime" entry:"1465503224" modified:"1465503224" priority:"H" project:"side_projects" status:"pending" tags:"tag" uuid:"748af634-a52d-42ca-bc98-781dcfcfd14b"]
+---
+time 1465503238
+new [description:"call john on facetime" entry:"1465503238" modified:"1465503238" priority:"H" project:"side_projects" status:"pending" tags:"tag" uuid:"34f663db-2807-48a9-95c3-d87298e02688"]
+---
+time 1465503243
+new [description:"call john on facetime" entry:"1465503243" modified:"1465503243" project:"side_projects" status:"pending" tags:"tag" uuid:"5afdb8eb-c3bf-416b-aac1-75a0d1b03005"]
+---
+time 1465503263
+new [description:"call john on facetime" entry:"1465503263" modified:"1465503263" project:"side_projects" status:"pending" uuid:"556d74a5-b583-4ded-ad96-359f1d49efcc"]
+---
