@@ -94,7 +94,8 @@ def do_task():
     if 'id' in request.form:
         task = twl.w.get_task(id=request.form['id'])
         print(task)
-        project = task[1]['project']
+        if 'project' in task[1]:
+	        project = task[1]['project']
         twl.w.task_done(id=request.form['id'])
         twl.refresh_tasks()
         msg = twl.get_tables()

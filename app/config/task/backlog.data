@@ -62,3 +62,9 @@
 {"description":"hello there","entry":"20160609T101539Z","modified":"20160609T101539Z","project":"test_project","status":"pending","tags":["t","a","g","","s"],"uuid":"9bf85cd1-a958-48b4-b46f-f7d673123c4e"}
 {"description":"hello there stranger","entry":"20160609T102741Z","modified":"20160609T102741Z","status":"pending","uuid":"0cf85b4e-d970-403a-96d4-d8bc8c181a53"}
 {"description":"hello there stranger","entry":"20160609T102812Z","modified":"20160609T102812Z","status":"pending","uuid":"b352c1ac-caa1-4753-888e-ffb5ebb0d45a"}
+{"description":"upload resits to learning central","end":"20160609T141449Z","entry":"20160608T131758Z","modified":"20160609T141449Z","project":"teaching","status":"completed","tags":["mob_dev"],"uuid":"27e208fd-390d-4dd4-8cb8-41d994fa5f97"}
+{"description":"connect search bar to map view controller","entry":"20160609T141936Z","modified":"20160609T141936Z","project":"side_projects","status":"pending","tags":["fumbs"],"uuid":"a098a60b-c94a-49eb-bc50-c4d6d7b510dc"}
+{"description":"test","entry":"20160609T142001Z","modified":"20160609T142001Z","status":"pending","uuid":"97107067-2ef8-47bd-8ee9-09b319b0ea59"}
+{"description":"test","entry":"20160609T142008Z","modified":"20160609T142008Z","status":"pending","uuid":"5e121ae4-2093-43a2-bdef-86b0853bf192"}
+{"description":"test","end":"20160609T142154Z","entry":"20160609T142008Z","modified":"20160609T142154Z","status":"completed","uuid":"5e121ae4-2093-43a2-bdef-86b0853bf192"}
+{"description":"test","end":"20160609T142209Z","entry":"20160609T142001Z","modified":"20160609T142209Z","status":"completed","uuid":"97107067-2ef8-47bd-8ee9-09b319b0ea59"}

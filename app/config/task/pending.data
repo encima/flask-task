@@ -5,4 +5,4 @@
 [description:"run tutorials on docker and create exercises" entry:"1465288014" modified:"1465386824" project:"teaching" status:"pending" uuid:"a0b10e47-6c2e-465e-aa46-c57c8daa0a73"]
 [description:"write how to contribute to open source" entry:"1465301830" modified:"1465386824" project:"teaching" status:"pending" tags:"blog" uuid:"365cb046-c2b7-421e-9ccf-d974b7fec74e"]
 [description:"add count for comments to posts" entry:"1465384817" modified:"1465384817" project:"freelance" status:"pending" tags:"ordinary_lies" uuid:"f990dd9c-6c4b-492d-891e-b9c9f283dc9f"]
-[description:"upload resits to learning central" entry:"1465391878" modified:"1465391878" project:"teaching" status:"pending" tags:"mob_dev" uuid:"27e208fd-390d-4dd4-8cb8-41d994fa5f97"]
+[description:"connect search bar to map view controller" entry:"1465481976" modified:"1465481976" project:"side_projects" status:"pending" tags:"fumbs" uuid:"a098a60b-c94a-49eb-bc50-c4d6d7b510dc"]
