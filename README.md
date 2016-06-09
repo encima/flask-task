@@ -19,11 +19,12 @@ Using:
 ## Running
 
 1. `pip install virtualenv`
-2. `virtualenv ol`
-3. `source ol/bin/activate`
-4. `ol/bin/pip install -r requirements.txt`
-4. `ol/bin/python run.py`
+2. `virtualenv tf`
+3. `source tf/bin/activate`
+4. `tf/bin/pip install -r requirements.txt`
+4. `tf/bin/python run.py`
+
 
 ## Creating your database
 
-All config files are in `app/config` and variables are in `ol.cfg`
+All config files are in `app/config` and variables are in `sample.cfg`
