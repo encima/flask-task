@@ -3,7 +3,8 @@
 
 tf/*
 
-#app/config/*
+app/config/*
+
 *.db
 #####=== Python ===#####
 *.sw*
