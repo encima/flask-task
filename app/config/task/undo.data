@@ -279,3 +279,414 @@ new [description:"call john on facetime" entry:"1465503243" modified:"1465503243
 time 1465503263
 new [description:"call john on facetime" entry:"1465503263" modified:"1465503263" project:"side_projects" status:"pending" uuid:"556d74a5-b583-4ded-ad96-359f1d49efcc"]
 ---
+time 1465550351
+new [description:"call Kia for door fix quote" entry:"1465550351" modified:"1465550351" project:"car" status:"pending" uuid:"00946010-97fb-4ce8-aefd-b1d8eb104f2c"]
+---
+time 1465550365
+new [description:"call police to report" entry:"1465550365" modified:"1465550365" project:"car" status:"pending" uuid:"ca173af5-22da-4020-97a8-1aa99c8c21eb"]
+---
+time 1465550371
+old [description:"upload flask-task to digital ocean" entry:"1465482194" modified:"1465482194" project:"side_projects" status:"pending" tags:"task" uuid:"d8464fb1-e98a-459a-aeca-e07823ae5692"]
+new [description:"upload flask-task to digital ocean" end:"1465550371" entry:"1465482194" modified:"1465550371" project:"side_projects" status:"completed" tags:"task" uuid:"d8464fb1-e98a-459a-aeca-e07823ae5692"]
+---
+time 1465553783
+old [description:"call police to report" entry:"1465550365" modified:"1465550365" project:"car" status:"pending" uuid:"ca173af5-22da-4020-97a8-1aa99c8c21eb"]
+new [description:"call police to report" end:"1465553783" entry:"1465550365" modified:"1465553783" project:"car" status:"completed" uuid:"ca173af5-22da-4020-97a8-1aa99c8c21eb"]
+---
+time 1465560087
+new [description:"take up garden decking" entry:"1465560087" modified:"1465560087" project:"home" status:"pending" uuid:"9d834e85-5237-4c1d-b9d9-afd0a0b9a00c"]
+---
+time 1465635826
+new [description:"buy garden gloves" entry:"1465635826" modified:"1465635826" project:"home" status:"pending" uuid:"c1587a67-456d-41d8-aed3-af126e6b3eb9"]
+---
+time 1465635860
+new [description:"check with bmw for car" entry:"1465635860" modified:"1465635860" project:"car" status:"pending" uuid:"3ef30458-624f-46d5-a97d-24c3a868a8c9"]
+---
+time 1465640322
+new [description:"buy soap" entry:"1465640322" modified:"1465640322" project:"home" status:"pending" uuid:"ecbcc5a2-32b7-47d5-97a9-35b7df570686"]
+---
+time 1465665242
+old [description:"buy garden gloves" entry:"1465635826" modified:"1465635826" project:"home" status:"pending" uuid:"c1587a67-456d-41d8-aed3-af126e6b3eb9"]
+new [description:"buy garden gloves" end:"1465665242" entry:"1465635826" modified:"1465665242" project:"home" status:"completed" uuid:"c1587a67-456d-41d8-aed3-af126e6b3eb9"]
+---
+time 1465665243
+old [description:"buy soap" entry:"1465640322" modified:"1465640322" project:"home" status:"pending" uuid:"ecbcc5a2-32b7-47d5-97a9-35b7df570686"]
+new [description:"buy soap" end:"1465665243" entry:"1465640322" modified:"1465665243" project:"home" status:"completed" uuid:"ecbcc5a2-32b7-47d5-97a9-35b7df570686"]
+---
+time 1465665252
+old [description:"check with bmw for car" entry:"1465635860" modified:"1465635860" project:"car" status:"pending" uuid:"3ef30458-624f-46d5-a97d-24c3a868a8c9"]
+new [description:"check with bmw for car" end:"1465665252" entry:"1465635860" modified:"1465665252" project:"car" status:"completed" uuid:"3ef30458-624f-46d5-a97d-24c3a868a8c9"]
+---
+time 1465667483
+new [description:"get video of crash from cctv hdd" entry:"1465667483" modified:"1465667483" project:"car" status:"pending" uuid:"a79ddb69-e2dd-47ad-a474-acb07e1d64d3"]
+---
+time 1465827403
+new [description:"call tesco to return foreman" entry:"1465827403" modified:"1465827403" project:"home" status:"pending" uuid:"495fc110-c9f3-4b51-979e-ed6281c1ac3e"]
+---
+time 1465827408
+old [description:"add count for comments to posts" entry:"1465384817" modified:"1465384817" project:"freelance" status:"pending" tags:"ordinary_lies" uuid:"f990dd9c-6c4b-492d-891e-b9c9f283dc9f"]
+new [description:"add count for comments to posts" end:"1465827408" entry:"1465384817" modified:"1465827408" project:"freelance" status:"completed" tags:"ordinary_lies" uuid:"f990dd9c-6c4b-492d-891e-b9c9f283dc9f"]
+---
+time 1465827433
+new [description:"create bakuro generator and solver checker" entry:"1465827433" modified:"1465827433" priority:"L" project:"teaching" status:"pending" uuid:"d2643989-2770-4d1c-9113-66d0056b01d6"]
+---
+time 1465827446
+old [description:"connect search bar to map view controller" entry:"1465481976" modified:"1465481976" project:"side_projects" status:"pending" tags:"fumbs" uuid:"a098a60b-c94a-49eb-bc50-c4d6d7b510dc"]
+new [description:"connect search bar to map view controller" end:"1465827446" entry:"1465481976" modified:"1465827446" project:"side_projects" status:"completed" tags:"fumbs" uuid:"a098a60b-c94a-49eb-bc50-c4d6d7b510dc"]
+---
+time 1465827450
+old [description:"create server to host projects similar to thoughtboxes" entry:"1465287421" modified:"1465287421" project:"side_projects" status:"pending" tags:"task_warrior" uuid:"284208c7-552b-4720-8fa1-2294b5c9762a"]
+new [description:"create server to host projects similar to thoughtboxes" end:"1465827450" entry:"1465287421" modified:"1465827450" project:"side_projects" status:"completed" tags:"task_warrior" uuid:"284208c7-552b-4720-8fa1-2294b5c9762a"]
+---
+time 1465827453
+old [description:"call Kia for door fix quote" entry:"1465550351" modified:"1465550351" project:"car" status:"pending" uuid:"00946010-97fb-4ce8-aefd-b1d8eb104f2c"]
+new [description:"call Kia for door fix quote" end:"1465827453" entry:"1465550351" modified:"1465827453" project:"car" status:"completed" uuid:"00946010-97fb-4ce8-aefd-b1d8eb104f2c"]
+---
+time 1465827456
+old [description:"get video of crash from cctv hdd" entry:"1465667483" modified:"1465667483" project:"car" status:"pending" uuid:"a79ddb69-e2dd-47ad-a474-acb07e1d64d3"]
+new [description:"get video of crash from cctv hdd" end:"1465827456" entry:"1465667483" modified:"1465827456" project:"car" status:"completed" uuid:"a79ddb69-e2dd-47ad-a474-acb07e1d64d3"]
+---
+time 1465827459
+old [description:"take up garden decking" entry:"1465560087" modified:"1465560087" project:"home" status:"pending" uuid:"9d834e85-5237-4c1d-b9d9-afd0a0b9a00c"]
+new [description:"take up garden decking" end:"1465827459" entry:"1465560087" modified:"1465827459" project:"home" status:"completed" uuid:"9d834e85-5237-4c1d-b9d9-afd0a0b9a00c"]
+---
+time 1465890110
+new [description:"sort Amazon return for bag" entry:"1465890110" modified:"1465890110" project:"home" status:"pending" tags:"tash" uuid:"57db6b57-d249-432b-872b-be31770cc37e"]
+---
+time 1465890436
+new [description:"link search bar to map markers" entry:"1465890436" modified:"1465890436" project:"side_projects" status:"pending" tags:"fumbs" uuid:"7d6cd354-d7f9-401c-828b-6fe5d6746dcc"]
+---
+time 1466503521
+old [description:"sort Amazon return for bag" entry:"1465890110" modified:"1465890110" project:"home" status:"pending" tags:"tash" uuid:"57db6b57-d249-432b-872b-be31770cc37e"]
+new [description:"sort Amazon return for bag" end:"1466503521" entry:"1465890110" modified:"1466503521" project:"home" status:"completed" tags:"tash" uuid:"57db6b57-d249-432b-872b-be31770cc37e"]
+---
+time 1466503529
+old [description:"outline all software to be used" entry:"1465286926" modified:"1465386824" project:"teaching" status:"pending" tags:"devops" uuid:"6399fa5e-af60-4e13-af97-9dc0f344cdc0"]
+new [description:"outline all software to be used" end:"1466503529" entry:"1465286926" modified:"1466503529" project:"teaching" status:"completed" tags:"devops" uuid:"6399fa5e-af60-4e13-af97-9dc0f344cdc0"]
+---
+time 1466503529
+old [description:"get quote for taking up concrete" entry:"1465287076" modified:"1465287076" project:"home" status:"pending" tags:"garden" uuid:"54bd6889-ed04-429e-ae9a-c22c359eb681"]
+new [description:"get quote for taking up concrete" end:"1466503529" entry:"1465287076" modified:"1466503529" project:"home" status:"completed" tags:"garden" uuid:"54bd6889-ed04-429e-ae9a-c22c359eb681"]
+---
+time 1466503563
+new [description:"set up task warrior server" entry:"1466503563" modified:"1466503563" project:"side_projects" status:"pending" uuid:"70d8f1c5-d5d9-4104-be96-31ca2f5aae24"]
+---
+time 1466582221
+new [description:"find ring size" entry:"1466582221" modified:"1466582221" project:"personal" status:"pending" uuid:"3692fd9e-28d1-4956-b175-c10f7cb6c138"]
+---
+time 1466582238
+new [description:"post tash parcel" entry:"1466582238" modified:"1466582238" project:"personal" status:"pending" uuid:"aaaad1af-24a2-4009-b6c5-fa2a518c1de8"]
+---
+time 1466582251
+new [description:"buy tash mooncup" entry:"1466582251" modified:"1466582251" project:"personal" status:"pending" uuid:"80d193c5-2d3b-4307-9394-35be1913e06d"]
+---
+time 1466582266
+new [description:"buy pomade and comb" entry:"1466582266" modified:"1466582266" project:"personal" status:"pending" uuid:"53d708d7-4809-43b7-8497-c72d7f5d5d05"]
+---
+time 1466582432
+old [description:"set up task warrior server" entry:"1466503563" modified:"1466503563" project:"side_projects" status:"pending" uuid:"70d8f1c5-d5d9-4104-be96-31ca2f5aae24"]
+new [description:"set up task warrior server" end:"1466582432" entry:"1466503563" modified:"1466582432" project:"side_projects" status:"completed" uuid:"70d8f1c5-d5d9-4104-be96-31ca2f5aae24"]
+---
+time 1466582447
+new [description:"set up users and certs on taskwarrior server" entry:"1466582447" modified:"1466582447" project:"side_projects" status:"pending" uuid:"14784ebe-7937-468c-af1b-593b7c198afc"]
+---
+time 1466582466
+old [description:"create bakuro generator and solver checker" entry:"1465827433" modified:"1465827433" priority:"L" project:"teaching" status:"pending" uuid:"d2643989-2770-4d1c-9113-66d0056b01d6"]
+new [description:"create bakuro generator and solver checker" end:"1466582466" entry:"1465827433" modified:"1466582466" priority:"L" project:"teaching" status:"completed" uuid:"d2643989-2770-4d1c-9113-66d0056b01d6"]
+---
+time 1466582487
+new [description:"read and write bakuro grids" entry:"1466582487" modified:"1466582487" project:"teaching" status:"pending" tags:"comp_thinking" uuid:"671bbb63-ff15-4a0e-a2c7-327bdaeae7c5"]
+---
+time 1466582508
+new [description:"output grids as image" entry:"1466582508" modified:"1466582508" project:"teaching" status:"pending" tags:"comp_thinking" uuid:"fa795367-0ae0-4415-a3b1-086f9a33b210"]
+---
+time 1466599929
+old [description:"buy tash mooncup" entry:"1466582251" modified:"1466582251" project:"personal" status:"pending" uuid:"80d193c5-2d3b-4307-9394-35be1913e06d"]
+new [description:"buy tash mooncup" end:"1466599929" entry:"1466582251" modified:"1466599929" project:"personal" status:"completed" uuid:"80d193c5-2d3b-4307-9394-35be1913e06d"]
+---
+time 1466599931
+old [description:"buy pomade and comb" entry:"1466582266" modified:"1466582266" project:"personal" status:"pending" uuid:"53d708d7-4809-43b7-8497-c72d7f5d5d05"]
+new [description:"buy pomade and comb" end:"1466599931" entry:"1466582266" modified:"1466599931" project:"personal" status:"completed" uuid:"53d708d7-4809-43b7-8497-c72d7f5d5d05"]
+---
+time 1466599932
+old [description:"find ring size" entry:"1466582221" modified:"1466582221" project:"personal" status:"pending" uuid:"3692fd9e-28d1-4956-b175-c10f7cb6c138"]
+new [description:"find ring size" end:"1466599932" entry:"1466582221" modified:"1466599932" project:"personal" status:"completed" uuid:"3692fd9e-28d1-4956-b175-c10f7cb6c138"]
+---
+time 1466966236
+old [description:"read and write bakuro grids" entry:"1466582487" modified:"1466582487" project:"teaching" status:"pending" tags:"comp_thinking" uuid:"671bbb63-ff15-4a0e-a2c7-327bdaeae7c5"]
+new [description:"read and write bakuro grids" end:"1466966236" entry:"1466582487" modified:"1466966236" project:"teaching" status:"completed" tags:"comp_thinking" uuid:"671bbb63-ff15-4a0e-a2c7-327bdaeae7c5"]
+---
+time 1466966239
+old [description:"post tash parcel" entry:"1466582238" modified:"1466582238" project:"personal" status:"pending" uuid:"aaaad1af-24a2-4009-b6c5-fa2a518c1de8"]
+new [description:"post tash parcel" end:"1466966239" entry:"1466582238" modified:"1466966239" project:"personal" status:"completed" uuid:"aaaad1af-24a2-4009-b6c5-fa2a518c1de8"]
+---
+time 1466966239
+old [description:"set up users and certs on taskwarrior server" entry:"1466582447" modified:"1466582447" project:"side_projects" status:"pending" uuid:"14784ebe-7937-468c-af1b-593b7c198afc"]
+new [description:"set up users and certs on taskwarrior server" end:"1466966239" entry:"1466582447" modified:"1466966239" project:"side_projects" status:"completed" uuid:"14784ebe-7937-468c-af1b-593b7c198afc"]
+---
+time 1466966275
+new [description:"call getmein" entry:"1466966275" modified:"1466966275" project:"home" status:"pending" uuid:"4255b5e8-918b-4a9b-91e1-8e923a10b26c"]
+---
+time 1467022972
+old [description:"vetting form" entry:"1465482508" modified:"1465482508" project:"curop" status:"pending" uuid:"405ed116-499d-425b-858a-f0d379746dfa"]
+new [description:"vetting form" end:"1467022972" entry:"1465482508" modified:"1467022972" project:"curop" status:"completed" uuid:"405ed116-499d-425b-858a-f0d379746dfa"]
+---
+time 1467105295
+new [description:"add delivery methods" entry:"1467105295" modified:"1467105295" project:"papers" status:"pending" uuid:"7c438407-8e3d-4ba6-9078-d92d259b7600"]
+---
+time 1467105340
+new [description:"pick up caz" entry:"1467105340" modified:"1467105340" project:"home" status:"pending" uuid:"849b2691-a108-4901-9565-a7c3a0bcf5d3"]
+---
+time 1467110159
+new [description:"WSSSPE paper on links with industry and academia" entry:"1467110159" modified:"1467110159" project:"papers" status:"pending" uuid:"68677ddd-cf9d-4bda-9ffd-49016af44c69"]
+---
+time 1467715978
+old [description:"call tesco to return foreman" entry:"1465827403" modified:"1465827403" project:"home" status:"pending" uuid:"495fc110-c9f3-4b51-979e-ed6281c1ac3e"]
+new [description:"call tesco to return foreman" end:"1467715978" entry:"1465827403" modified:"1467715978" project:"home" status:"completed" uuid:"495fc110-c9f3-4b51-979e-ed6281c1ac3e"]
+---
+time 1467715980
+old [description:"call getmein" entry:"1466966275" modified:"1466966275" project:"home" status:"pending" uuid:"4255b5e8-918b-4a9b-91e1-8e923a10b26c"]
+new [description:"call getmein" end:"1467715980" entry:"1466966275" modified:"1467715980" project:"home" status:"completed" uuid:"4255b5e8-918b-4a9b-91e1-8e923a10b26c"]
+---
+time 1467715982
+old [description:"pick up caz" entry:"1467105340" modified:"1467105340" project:"home" status:"pending" uuid:"849b2691-a108-4901-9565-a7c3a0bcf5d3"]
+new [description:"pick up caz" end:"1467715982" entry:"1467105340" modified:"1467715982" project:"home" status:"completed" uuid:"849b2691-a108-4901-9565-a7c3a0bcf5d3"]
+---
+time 1467715998
+old [description:"add delivery methods" entry:"1467105295" modified:"1467105295" project:"papers" status:"pending" uuid:"7c438407-8e3d-4ba6-9078-d92d259b7600"]
+new [description:"add delivery methods" end:"1467715998" entry:"1467105295" modified:"1467715998" project:"papers" status:"completed" uuid:"7c438407-8e3d-4ba6-9078-d92d259b7600"]
+---
+time 1467716000
+old [description:"WSSSPE paper on links with industry and academia" entry:"1467110159" modified:"1467110159" project:"papers" status:"pending" uuid:"68677ddd-cf9d-4bda-9ffd-49016af44c69"]
+new [description:"WSSSPE paper on links with industry and academia" end:"1467716000" entry:"1467110159" modified:"1467716000" project:"papers" status:"completed" uuid:"68677ddd-cf9d-4bda-9ffd-49016af44c69"]
+---
+time 1467716022
+new [description:"add in Wendy comments" entry:"1467716022" modified:"1467716022" project:"papers" status:"pending" uuid:"0fb9e9d2-20c4-4ad8-ab9b-6a0c5c226216"]
+---
+time 1467716035
+new [description:"add in pics from Dropbox" entry:"1467716035" modified:"1467716035" project:"papers" status:"pending" uuid:"33c3421f-24ff-49ef-9857-72242862a5fd"]
+---
+time 1467716081
+new [description:"submit paper to wssspe" entry:"1467716081" modified:"1467716081" project:"papers" status:"pending" uuid:"15cae819-8c22-4c7e-937b-7115195d6c12"]
+---
+time 1467716088
+old [description:"write slides for math and binary arithmetic" entry:"1465287311" modified:"1465386824" project:"teaching" status:"pending" tags:"comp_thinking" uuid:"a4909529-44b3-46be-9629-2db028e59b52"]
+new [description:"write slides for math and binary arithmetic" end:"1467716088" entry:"1465287311" modified:"1467716088" project:"teaching" status:"completed" tags:"comp_thinking" uuid:"a4909529-44b3-46be-9629-2db028e59b52"]
+---
+time 1467716108
+new [description:"finish complexity slides" entry:"1467716108" modified:"1467716108" project:"teaching" status:"pending" uuid:"ee54ff9d-ed8a-4df7-bc30-87828b709a70"]
+---
+time 1467716120
+new [description:"comp thinking coursework" entry:"1467716120" modified:"1467716120" project:"teaching" status:"pending" uuid:"897531d8-23e5-475f-95d7-55e6f9a27880"]
+---
+time 1467716138
+new [description:"Raspberry Pi and NFC reader" entry:"1467716138" modified:"1467716138" project:"NSA" status:"pending" uuid:"d453aba6-1425-44b0-9b4d-b1e497e69943"]
+---
+time 1467716169
+new [description:"Presentation on student dev pipeline" entry:"1467716169" modified:"1467716169" project:"NSA" status:"pending" uuid:"049cc02a-8143-41aa-a40d-5e038afcdb54"]
+---
+time 1467879056
+new [description:"canadian visa" entry:"1467879056" modified:"1467879056" project:"us_wedding" status:"pending" uuid:"4fd8aa7e-ac8b-40be-a71d-8def2cccf4bb"]
+---
+time 1467879070
+new [description:"us visa" entry:"1467879070" modified:"1467879070" project:"us_wedding" status:"pending" uuid:"25d3a7a0-9167-4de1-8dfd-dab92d1436a3"]
+---
+time 1467879081
+new [description:"amsterdam accom" entry:"1467879081" modified:"1467879081" project:"us_wedding" status:"pending" uuid:"8ab0b1ea-ab14-474a-b2a4-baa4671d1208"]
+---
+time 1467879098
+new [description:"toronto accom (1\/2 nights)" entry:"1467879098" modified:"1467879098" project:"us_wedding" status:"pending" uuid:"2c22f106-98e5-4a18-9705-55ae28d34f19"]
+---
+time 1467880607
+new [description:"pay canada for accom" entry:"1467880607" modified:"1467880607" project:"us_wedding" status:"pending" uuid:"1109339e-edd4-4a66-91cc-e634b1df44af"]
+---
+time 1467884370
+old [description:"canadian visa" entry:"1467879056" modified:"1467879056" project:"us_wedding" status:"pending" uuid:"4fd8aa7e-ac8b-40be-a71d-8def2cccf4bb"]
+new [description:"canadian visa" end:"1467884370" entry:"1467879056" modified:"1467884370" project:"us_wedding" status:"completed" uuid:"4fd8aa7e-ac8b-40be-a71d-8def2cccf4bb"]
+---
+time 1467884371
+old [description:"us visa" entry:"1467879070" modified:"1467879070" project:"us_wedding" status:"pending" uuid:"25d3a7a0-9167-4de1-8dfd-dab92d1436a3"]
+new [description:"us visa" end:"1467884371" entry:"1467879070" modified:"1467884371" project:"us_wedding" status:"completed" uuid:"25d3a7a0-9167-4de1-8dfd-dab92d1436a3"]
+---
+time 1467884373
+old [description:"amsterdam accom" entry:"1467879081" modified:"1467879081" project:"us_wedding" status:"pending" uuid:"8ab0b1ea-ab14-474a-b2a4-baa4671d1208"]
+new [description:"amsterdam accom" end:"1467884373" entry:"1467879081" modified:"1467884373" project:"us_wedding" status:"completed" uuid:"8ab0b1ea-ab14-474a-b2a4-baa4671d1208"]
+---
+time 1467893796
+old [description:"add in Wendy comments" entry:"1467716022" modified:"1467716022" project:"papers" status:"pending" uuid:"0fb9e9d2-20c4-4ad8-ab9b-6a0c5c226216"]
+new [description:"add in Wendy comments" end:"1467893796" entry:"1467716022" modified:"1467893796" project:"papers" status:"completed" uuid:"0fb9e9d2-20c4-4ad8-ab9b-6a0c5c226216"]
+---
+time 1467893797
+old [description:"add in pics from Dropbox" entry:"1467716035" modified:"1467716035" project:"papers" status:"pending" uuid:"33c3421f-24ff-49ef-9857-72242862a5fd"]
+new [description:"add in pics from Dropbox" end:"1467893797" entry:"1467716035" modified:"1467893797" project:"papers" status:"completed" uuid:"33c3421f-24ff-49ef-9857-72242862a5fd"]
+---
+time 1467893798
+old [description:"submit paper to wssspe" entry:"1467716081" modified:"1467716081" project:"papers" status:"pending" uuid:"15cae819-8c22-4c7e-937b-7115195d6c12"]
+new [description:"submit paper to wssspe" end:"1467893798" entry:"1467716081" modified:"1467893798" project:"papers" status:"completed" uuid:"15cae819-8c22-4c7e-937b-7115195d6c12"]
+---
+time 1467893827
+new [description:"latex exam generator" entry:"1467893827" modified:"1467893827" project:"teaching" status:"pending" tags:"cm6111" uuid:"de2d56c5-6a0a-4c4d-8975-c433973de6df"]
+---
+time 1468222081
+old [description:"finish complexity slides" entry:"1467716108" modified:"1467716108" project:"teaching" status:"pending" uuid:"ee54ff9d-ed8a-4df7-bc30-87828b709a70"]
+new [description:"finish complexity slides" end:"1468222081" entry:"1467716108" modified:"1468222081" project:"teaching" status:"completed" uuid:"ee54ff9d-ed8a-4df7-bc30-87828b709a70"]
+---
+time 1468227723
+new [description:"organise mentor prlt" entry:"1468227723" modified:"1468227723" project:"pcutl" status:"pending" uuid:"73a4035d-b86b-4add-b842-b526c8196b70"]
+---
+time 1468272516
+new [description:"meetup api to generate email for cardiff meets" entry:"1468272516" modified:"1468272516" project:"side_projects" status:"pending" uuid:"336cfcca-e1da-496f-bb1c-228455c800af"]
+---
+time 1468328609
+new [description:"contract for police" entry:"1468328609" modified:"1468328609" project:"curop" status:"pending" uuid:"63b38a7e-2f4b-487c-8fff-4f3b49340e5b"]
+---
+time 1469190304
+old [description:"run tutorials on docker and create exercises" entry:"1465288014" modified:"1465386824" project:"teaching" status:"pending" uuid:"a0b10e47-6c2e-465e-aa46-c57c8daa0a73"]
+new [description:"run tutorials on docker and create exercises" end:"1469190304" entry:"1465288014" modified:"1469190304" project:"teaching" status:"completed" uuid:"a0b10e47-6c2e-465e-aa46-c57c8daa0a73"]
+---
+time 1469190308
+old [description:"output grids as image" entry:"1466582508" modified:"1466582508" project:"teaching" status:"pending" tags:"comp_thinking" uuid:"fa795367-0ae0-4415-a3b1-086f9a33b210"]
+new [description:"output grids as image" end:"1469190308" entry:"1466582508" modified:"1469190308" project:"teaching" status:"completed" tags:"comp_thinking" uuid:"fa795367-0ae0-4415-a3b1-086f9a33b210"]
+---
+time 1469190441
+old [description:"contract for police" entry:"1468328609" modified:"1468328609" project:"curop" status:"pending" uuid:"63b38a7e-2f4b-487c-8fff-4f3b49340e5b"]
+new [description:"contract for police" end:"1469190441" entry:"1468328609" modified:"1469190441" project:"curop" status:"completed" uuid:"63b38a7e-2f4b-487c-8fff-4f3b49340e5b"]
+---
+time 1469190446
+old [description:"organise mentor prlt" entry:"1468227723" modified:"1468227723" project:"pcutl" status:"pending" uuid:"73a4035d-b86b-4add-b842-b526c8196b70"]
+new [description:"organise mentor prlt" end:"1469190446" entry:"1468227723" modified:"1469190446" project:"pcutl" status:"completed" uuid:"73a4035d-b86b-4add-b842-b526c8196b70"]
+---
+time 1469190446
+old [description:"meetup api to generate email for cardiff meets" entry:"1468272516" modified:"1468272516" project:"side_projects" status:"pending" uuid:"336cfcca-e1da-496f-bb1c-228455c800af"]
+new [description:"meetup api to generate email for cardiff meets" end:"1469190446" entry:"1468272516" modified:"1469190446" project:"side_projects" status:"completed" uuid:"336cfcca-e1da-496f-bb1c-228455c800af"]
+---
+time 1470037796
+new [description:"turn android projects into git repos" entry:"1470037796" modified:"1470037796" status:"pending" uuid:"678924ce-90d8-4139-b70f-f13f7f54b079"]
+---
+time 1470212330
+old [description:"turn android projects into git repos" entry:"1470037796" modified:"1470037796" status:"pending" uuid:"678924ce-90d8-4139-b70f-f13f7f54b079"]
+new [description:"turn android projects into git repos" end:"1470212330" entry:"1470037796" modified:"1470212330" status:"completed" uuid:"678924ce-90d8-4139-b70f-f13f7f54b079"]
+---
+time 1470212341
+new [description:"book WSSSPE" entry:"1470212341" modified:"1470212341" project:"NSA" status:"pending" uuid:"131084ea-33f7-4ac8-991d-f8f23ab75511"]
+---
+time 1470212365
+new [description:"turn android projects into git repos" entry:"1470212365" modified:"1470212365" project:"CM6122" status:"pending" uuid:"234e0a7c-6f1f-4342-8005-3213ba776000"]
+---
+time 1470213253
+new [description:"Review content of all slides" entry:"1470213253" modified:"1470213253" project:"CM6111" status:"pending" uuid:"fcf90624-66ca-4380-a18c-ac1e9924d8c8"]
+---
+time 1470213331
+new [description:"Write basic exam structure" entry:"1470213331" modified:"1470213331" project:"CM6111" status:"pending" uuid:"56f53275-eade-4101-9ab8-6c141c486c17"]
+---
+time 1470318517
+new [description:"screens for sims auto refreshing" entry:"1470318517" modified:"1470318517" project:"admissions" status:"pending" uuid:"71253d6f-83b8-4111-b98c-49eca00fd757"]
+---
+time 1470492475
+old [description:"screens for sims auto refreshing" entry:"1470318517" modified:"1470318517" project:"admissions" status:"pending" uuid:"71253d6f-83b8-4111-b98c-49eca00fd757"]
+new [description:"screens for sims auto refreshing" end:"1470492475" entry:"1470318517" modified:"1470492475" project:"admissions" status:"completed" uuid:"71253d6f-83b8-4111-b98c-49eca00fd757"]
+---
+time 1470668002
+new [description:"amend paper and send out" entry:"1470668002" modified:"1470668002" project:"nsa" status:"pending" uuid:"40591f85-d4ad-4574-a88f-5af7f8420be0"]
+---
+time 1470668059
+old [description:"amend paper and send out" entry:"1470668002" modified:"1470668002" project:"nsa" status:"pending" uuid:"40591f85-d4ad-4574-a88f-5af7f8420be0"]
+new [description:"amend paper and send out" end:"1470668059" entry:"1470668002" modified:"1470668059" project:"nsa" status:"completed" uuid:"40591f85-d4ad-4574-a88f-5af7f8420be0"]
+---
+time 1470736632
+new [description:"find R script for ggplot multiple vars" entry:"1470736632" modified:"1470736632" project:"susan" status:"pending" uuid:"7ac41d6b-9a7a-43e8-b896-8c88da78f248"]
+---
+time 1472197982
+new [description:"print all tickets" entry:"1472197982" modified:"1472197982" project:"travel" status:"pending" uuid:"37687b64-a92c-429b-9036-910c660e2520"]
+---
+time 1472197996
+new [description:"add all events to calendar" entry:"1472197996" modified:"1472197996" project:"travel" status:"pending" uuid:"935768c5-9d9e-4948-abdc-ad9744886877"]
+---
+time 1472198069
+new [description:"book car for US\/Canada" entry:"1472198069" modified:"1472198069" project:"travel" status:"pending" uuid:"2721a330-d281-4fa8-8abd-8df355c29352"]
+---
+time 1472198843
+new [description:"d duggan" entry:"1472198843" modified:"1472198843" project:"adm" status:"pending" uuid:"b913a4bd-961f-4de0-80a1-3dd77300df15"]
+---
+time 1472200685
+old [description:"d duggan" entry:"1472198843" modified:"1472198843" project:"adm" status:"pending" uuid:"b913a4bd-961f-4de0-80a1-3dd77300df15"]
+new [description:"d duggan" end:"1472200685" entry:"1472198843" modified:"1472200685" project:"adm" status:"completed" uuid:"b913a4bd-961f-4de0-80a1-3dd77300df15"]
+---
+time 1472200958
+old [description:"book WSSSPE" entry:"1470212341" modified:"1470212341" project:"NSA" status:"pending" uuid:"131084ea-33f7-4ac8-991d-f8f23ab75511"]
+new [description:"book WSSSPE" end:"1472200958" entry:"1470212341" modified:"1472200958" project:"NSA" status:"completed" uuid:"131084ea-33f7-4ac8-991d-f8f23ab75511"]
+---
+time 1472200958
+old [description:"turn android projects into git repos" entry:"1470212365" modified:"1470212365" project:"CM6122" status:"pending" uuid:"234e0a7c-6f1f-4342-8005-3213ba776000"]
+new [description:"turn android projects into git repos" end:"1472200958" entry:"1470212365" modified:"1472200958" project:"CM6122" status:"completed" uuid:"234e0a7c-6f1f-4342-8005-3213ba776000"]
+---
+time 1472309453
+old [description:"toronto accom (1\/2 nights)" entry:"1467879098" modified:"1467879098" project:"us_wedding" status:"pending" uuid:"2c22f106-98e5-4a18-9705-55ae28d34f19"]
+new [description:"toronto accom (1\/2 nights)" end:"1472309453" entry:"1467879098" modified:"1472309453" project:"us_wedding" status:"completed" uuid:"2c22f106-98e5-4a18-9705-55ae28d34f19"]
+---
+time 1472309468
+old [description:"add all events to calendar" entry:"1472197996" modified:"1472197996" project:"travel" status:"pending" uuid:"935768c5-9d9e-4948-abdc-ad9744886877"]
+new [description:"add all events to calendar" end:"1472309468" entry:"1472197996" modified:"1472309468" project:"travel" status:"completed" uuid:"935768c5-9d9e-4948-abdc-ad9744886877"]
+---
+time 1472309468
+old [description:"book car for US\/Canada" entry:"1472198069" modified:"1472198069" project:"travel" status:"pending" uuid:"2721a330-d281-4fa8-8abd-8df355c29352"]
+new [description:"book car for US\/Canada" end:"1472309468" entry:"1472198069" modified:"1472309468" project:"travel" status:"completed" uuid:"2721a330-d281-4fa8-8abd-8df355c29352"]
+---
+time 1474979031
+old [description:"Review content of all slides" entry:"1470213253" modified:"1470213253" project:"CM6111" status:"pending" uuid:"fcf90624-66ca-4380-a18c-ac1e9924d8c8"]
+new [description:"Review content of all slides" end:"1474979031" entry:"1470213253" modified:"1474979031" project:"CM6111" status:"completed" uuid:"fcf90624-66ca-4380-a18c-ac1e9924d8c8"]
+---
+time 1474979045
+new [description:"write coursework" entry:"1474979045" modified:"1474979045" project:"cm6111" status:"pending" uuid:"ee526440-7c99-4fec-858b-b72081a6a485"]
+---
+time 1474979048
+old [description:"find R script for ggplot multiple vars" entry:"1470736632" modified:"1470736632" project:"susan" status:"pending" uuid:"7ac41d6b-9a7a-43e8-b896-8c88da78f248"]
+new [description:"find R script for ggplot multiple vars" end:"1474979048" entry:"1470736632" modified:"1474979048" project:"susan" status:"completed" uuid:"7ac41d6b-9a7a-43e8-b896-8c88da78f248"]
+---
+time 1474979058
+new [description:"finish thumb print generator" entry:"1474979058" modified:"1474979058" project:"susan" status:"pending" uuid:"cf2f4964-d8d6-4201-a8c6-3829f0fd5879"]
+---
+time 1474979064
+old [description:"link search bar to map markers" entry:"1465890436" modified:"1465890436" project:"side_projects" status:"pending" tags:"fumbs" uuid:"7d6cd354-d7f9-401c-828b-6fe5d6746dcc"]
+new [description:"link search bar to map markers" end:"1474979064" entry:"1465890436" modified:"1474979064" project:"side_projects" status:"completed" tags:"fumbs" uuid:"7d6cd354-d7f9-401c-828b-6fe5d6746dcc"]
+---
+time 1474979082
+old [description:"latex exam generator" entry:"1467893827" modified:"1467893827" project:"teaching" status:"pending" tags:"cm6111" uuid:"de2d56c5-6a0a-4c4d-8975-c433973de6df"]
+new [description:"latex exam generator" end:"1474979082" entry:"1467893827" modified:"1474979082" project:"teaching" status:"completed" tags:"cm6111" uuid:"de2d56c5-6a0a-4c4d-8975-c433973de6df"]
+---
+time 1474979083
+old [description:"Write basic exam structure" entry:"1470213331" modified:"1470213331" project:"CM6111" status:"pending" uuid:"56f53275-eade-4101-9ab8-6c141c486c17"]
+new [description:"Write basic exam structure" end:"1474979083" entry:"1470213331" modified:"1474979083" project:"CM6111" status:"completed" uuid:"56f53275-eade-4101-9ab8-6c141c486c17"]
+---
+time 1474979089
+old [description:"pay canada for accom" entry:"1467880607" modified:"1467880607" project:"us_wedding" status:"pending" uuid:"1109339e-edd4-4a66-91cc-e634b1df44af"]
+new [description:"pay canada for accom" end:"1474979089" entry:"1467880607" modified:"1474979089" project:"us_wedding" status:"completed" uuid:"1109339e-edd4-4a66-91cc-e634b1df44af"]
+---
+time 1474979093
+old [description:"write coursework" entry:"1474979045" modified:"1474979045" project:"cm6111" status:"pending" uuid:"ee526440-7c99-4fec-858b-b72081a6a485"]
+new [description:"write coursework" end:"1474979093" entry:"1474979045" modified:"1474979093" project:"cm6111" status:"completed" uuid:"ee526440-7c99-4fec-858b-b72081a6a485"]
+---
+time 1474979093
+old [description:"finish thumb print generator" entry:"1474979058" modified:"1474979058" project:"susan" status:"pending" uuid:"cf2f4964-d8d6-4201-a8c6-3829f0fd5879"]
+new [description:"finish thumb print generator" end:"1474979093" entry:"1474979058" modified:"1474979093" project:"susan" status:"completed" uuid:"cf2f4964-d8d6-4201-a8c6-3829f0fd5879"]
+---
+time 1479910842
+old [description:"comp thinking coursework" entry:"1467716120" modified:"1467716120" project:"teaching" status:"pending" uuid:"897531d8-23e5-475f-95d7-55e6f9a27880"]
+new [description:"comp thinking coursework" end:"1479910842" entry:"1467716120" modified:"1479910842" project:"teaching" status:"completed" uuid:"897531d8-23e5-475f-95d7-55e6f9a27880"]
+---
+time 1479910850
+old [description:"print all tickets" entry:"1472197982" modified:"1472197982" project:"travel" status:"pending" uuid:"37687b64-a92c-429b-9036-910c660e2520"]
+new [description:"print all tickets" end:"1479910850" entry:"1472197982" modified:"1479910850" project:"travel" status:"completed" uuid:"37687b64-a92c-429b-9036-910c660e2520"]
+---
+time 1479910855
+old [description:"Presentation on student dev pipeline" entry:"1467716169" modified:"1467716169" project:"NSA" status:"pending" uuid:"049cc02a-8143-41aa-a40d-5e038afcdb54"]
+new [description:"Presentation on student dev pipeline" end:"1479910855" entry:"1467716169" modified:"1479910855" project:"NSA" status:"completed" uuid:"049cc02a-8143-41aa-a40d-5e038afcdb54"]
+---
+time 1479910857
+old [description:"write how to contribute to open source" entry:"1465301830" modified:"1465386824" project:"teaching" status:"pending" tags:"blog" uuid:"365cb046-c2b7-421e-9ccf-d974b7fec74e"]
+new [description:"write how to contribute to open source" end:"1479910857" entry:"1465301830" modified:"1479910857" project:"teaching" status:"completed" tags:"blog" uuid:"365cb046-c2b7-421e-9ccf-d974b7fec74e"]
+---
+time 1479910857
+old [description:"Raspberry Pi and NFC reader" entry:"1467716138" modified:"1467716138" project:"NSA" status:"pending" uuid:"d453aba6-1425-44b0-9b4d-b1e497e69943"]
+new [description:"Raspberry Pi and NFC reader" end:"1479910857" entry:"1467716138" modified:"1479910857" project:"NSA" status:"completed" uuid:"d453aba6-1425-44b0-9b4d-b1e497e69943"]
+---
