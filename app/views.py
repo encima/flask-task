@@ -1,106 +1,131 @@
-import os
+"""File containing the routes linked to the application."""
 from app.tw import TW_Loader
-from app import app, db, login_manager, models
+from app import app, login_manager
 from app.models import User
-from flask import Flask, request, redirect, url_for, render_template, g, send_from_directory, jsonify
-from flask_sqlalchemy import SQLAlchemy
+from flask import request, redirect, url_for, render_template, jsonify, Blueprint
 import flask.ext.login as flask_login
-from werkzeug import secure_filename
-from datetime import datetime
 from passlib.hash import sha256_crypt
-from flask_table import Table, Col
+from app.utils import safe_lower
 
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
+twl_todo = TW_Loader(app.config['TASKRC'])
+tasks = twl_todo.get_tasks()
 
-twl = TW_Loader(app.config['TASKRC'])
-tasks = twl.get_tasks()
+twl_completed = TW_Loader(app.config['TASKRC'], status="completed")
+tasks_completed = twl_completed.get_tasks()
+theme = app.config['THEME'].lower()
+views = Blueprint('views', __name__,
+                  template_folder='themes/{}/templates'.format(theme),
+                  static_folder='themes/{}/static'.format(theme),
+                  static_url_path='/themes/{}/static'.format(theme))
 
 
 @login_manager.user_loader
 def user_loader(email):
-    return User.query.filter_by(email=email).first()
+    """Return a user object based on its email.
+
+    :param str email: email of the user we are looking for.
+    :return: A user object corresponding to the email.
+    :rtype: User
+    """
+    return User.query.filter_by(email=safe_lower(email)).first()
 
 
 @login_manager.request_loader
 def request_loader(request):
-    email = request.form.get('email')
+    email = safe_lower(request.form.get('email'))
     user = User.query.filter_by(email=email).first()
     if user is not None:
-        hash = sha256_crypt.encrypt(request.form['pw'])
-        user.is_authenticated = hash == user.hash
+        if sha256_crypt.verify(request.form['pw'], user.hash):
+            flask_login.login_user(user)
     return user
-
-def allowed_file(filename):
-   return '.' in filename and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
 # Login Handling
 
-#@app.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        email = request.form['email']
-        pw = request.form['pw']
-        hash = sha256_crypt.encrypt(pw)
-        user = User(email, hash)
-        db.session.add(user)
-        db.session.commit()
-        flask_login.login_user(user)
-        return redirect(url_for('index'))
-    elif request.method == 'GET':
-        return render_template('register.html')
+# FIXME: Each user should have a different taskrc
+# @views.route('/register', methods=['GET', 'POST'])
+# def register():
+#     if request.method == 'POST':
+#         email = safe_lower(request.form['email'])
+#         pw = request.form['pw']
+#         hash = sha256_crypt.encrypt(pw)
+#         user = User(email, hash)
+#         db.session.add(user)
+#         db.session.commit()
+#         flask_login.login_user(user)
+#         return redirect(url_for('index'))
+#     elif request.method == 'GET':
+#         return render_template('register.html')
 
-@app.route('/login', methods=['GET', 'POST'])
+
+@views.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        email = request.form['email']
+        email = safe_lower(request.form['email'])
         pw = request.form['pw']
         user = User.query.filter_by(email=email).first()
+        error_message = ""
         if user is not None:
             if sha256_crypt.verify(pw, user.hash):
-                # flask_login.login_user(user) #call is not working
-                flask_login.current_user = user
-                flask_login.remember_me = True
-                return redirect(url_for('index'))
-        return redirect(url_for('login'))
+                flask_login.login_user(user)
+                return redirect(url_for('views.index'))
+            else:
+                error_message = "Incorrect password."
+        else:
+            error_message = "User not found."
+        return render_template('login.html', title="Signin",
+                               error_message=error_message,
+                               container_table=True)
     elif request.method == 'GET':
-        return render_template('login.html')
+        return render_template('login.html', title="Signin",
+                               container_table=True)
 
-@app.route('/logout')
+
+@views.route('/logout')
 @flask_login.login_required
 def logout():
     flask_login.logout_user()
-    return redirect(url_for('login'))
+    return redirect(url_for('views.login'))
 
-@app.route('/add', methods=["POST"])
+
+@views.route('/add', methods=["POST"])
 @flask_login.login_required
 def add_task():
-    twl.add_task(request.form['task'])
-    return redirect(url_for('index'))
+    twl_todo.add_task(request.form['task'])
+    return redirect(url_for('views.index'))
 
-@app.route('/do', methods=['POST', 'PUT'])
+
+@views.route('/do', methods=['POST', 'PUT'])
 @flask_login.login_required
 def do_task():
     msg = "ok"
     project = "unassigned"
-    print(request.form)
     if 'id' in request.form:
-        task = twl.w.get_task(id=request.form['id'])
-        print(task)
+        task = twl_todo.w.get_task(id=request.form['id'])
         if 'project' in task[1]:
-	        project = task[1]['project']
-        twl.w.task_done(id=request.form['id'])
-        twl.refresh_tasks()
-        msg = twl.get_tables()
-        print(msg)
-    return jsonify({"error":False, "table":msg, "project":project})
+            project = task[1]['project']
+        twl_todo.w.task_done(id=request.form['id'])
+        twl_todo.refresh_tasks()
+        msg = twl_todo.get_tables()
+    return jsonify({"error": False, "table": msg, "project": project})
 
-@app.route('/refresh')
+
+@views.route('/refresh')
 @flask_login.login_required
 def refresh():
-    twl.refresh_tasks()
-    return redirect(url_for('index'))
+    twl_todo.refresh_tasks()
+    twl_completed.refresh_tasks()
+    return redirect(url_for('views.index'))
 
-@app.route('/')
+
+@views.route('/')
 @flask_login.login_required
 def index(name=None):
-    return render_template('index.html', current_user=flask_login.current_user, tasks = twl.get_tables())
+    return render_template('index.html', current_user=flask_login.current_user,
+                           tasks=twl_todo.get_tables(), title="To Do")
+
+
+@views.route('/completed')
+@flask_login.login_required
+def completed(name=None):
+    return render_template('completed.html', current_user=flask_login.current_user,
+                           tasks=twl_completed.get_tables(), title="Completed")

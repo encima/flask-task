@@ -1,8 +1,10 @@
 """Application initialization."""
 import os
-from flask import Flask, request, redirect, url_for, render_template, g
-from flask_sqlalchemy import SQLAlchemy
 import flask.ext.login as flask_login
+
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
 if os.path.exists("app/config/local.cfg"):
@@ -13,8 +15,10 @@ else:
 db = SQLAlchemy(app)
 
 login_manager = flask_login.LoginManager()
+from app.views import views  # noqa
+app.register_blueprint(views)
+login_manager.login_view = "views.login"
 
 login_manager.init_app(app)
-login_manager.login_view = "login"
 
-from app import views, models  # noqa
+from app import models  # noqa

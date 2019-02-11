@@ -51,7 +51,9 @@ def new_config():
                         "ADMIN_EMAIL": {"description": "",
                                         "value": "encima@gmail.com"},
                         "ADMIN_PW": {"description": "",
-                                     "value": "Tumultuous4Sunscreen"}, }
+                                     "value": "Tumultuous4Sunscreen"},
+                        "THEME": {"description": "",
+                                  "value": "Base"}}
 
     # Write the file in the config folder.
     for variable in config_variables:
