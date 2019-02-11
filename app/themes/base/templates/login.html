@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block extra_static %}
+<link href="signin.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+
+<div class="row vertical-center-row">
+  <div class="col-md-3"></div>
+  <div class="col-xs-12 col-md-6">
+    <div class="widget">
+
+
+    <form class="form-signin" action="{{ url_for('views.login') }}" method=post>
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" name="email" id="inputEmail" class="form-control top-buffer" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control top-buffer" placeholder="Password" name="pw" required="">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+    </form>
+
+    {% if error_message %}<div class="alert alert-danger top-buffer" role="alert">{{error_message}}</div>{% endif %}
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+{% endblock %}

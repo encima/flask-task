@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{title}}</title>
+
+  <meta name="author" content="chris@gwillia.ms">
+
+  <link href="{{ url_for('views.static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('views.static', filename='css/style.css') }}" rel="stylesheet">
+  {% block extra_static %}{% endblock %}
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <a href="#" class="navbar-brand">Flask-task</a>
+    {% if current_user.is_authenticated %}
+    <p class="navbar-text navbar-right">Signed in as {{ current_user.email }} | <a href="/logout">logout</a></p>
+    {% else %}
+    <p class="navbar-text navbar-right"><a href="/login">login</a></p>
+    {% endif %}
+    {% if current_user.is_authenticated %}
+    <ul class="nav navbar-nav">
+      <li {% if title=="To Do" %}class="active"{% endif %}><a href="/">To Do</a></li>
+      <li {% if title=="Completed" %}class="active"{% endif %}><a href="/completed">Completed</a></li>
+    </ul>
+    {% endif %}
+  </nav>
+  <div id="wrapper" class="content container{% if container_table %} container-table{% endif %}">
+    <!-- Page Content -->
+    {% block body %}{% endblock %}
+  </div>
+  <script src={{ url_for('views.static', filename='js/jquery.min.js') }}></script>
+  <script src={{ url_for('views.static', filename='js/bootstrap.min.js') }}></script>
+  <script src={{ url_for('views.static', filename='js/scripts.js') }}></script>
+</body>
+
+</html>

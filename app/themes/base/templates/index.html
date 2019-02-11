@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 widget top-buffer">
+      <form class="add-task" method="POST" action="/add">
+          <input name="task" placeholder="Enter a task in the format: task:<task> project:<proj> +tag +tag due:<dd-mm-yyyy> urgency:<urg>"/>
+      </form>
+      </div>
+            <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 widget top-buffer">
+          {% for project in tasks: %}
+    			<h3 data-project="{{project}}">{{project|capitalize}}</h3>
+                  {{tasks[project]}}
+          {% endfor %}
+      </div>
+      <div class="col-md-2"></div>
+      </div>
+{% endblock %}

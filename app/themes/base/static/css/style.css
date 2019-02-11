@@ -1,0 +1,38 @@
+html, body, .container-table {
+    background: rgb(230,231,232);
+    height: 100%;
+    width: 100%;
+}
+
+.add-task {
+    width: 100%;
+}
+
+.add-task input {
+    width: 100%;
+}
+
+
+.widget {
+  padding:20px;
+  background-color: #FFF;
+}
+
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.top-buffer {
+   margin-top:20px;
+ }
+.navbar {
+ border-radius: 0!important;
+}
+
+.navbar-right {
+  margin-right: 15px;
+}
